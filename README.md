@@ -8,8 +8,8 @@ CC's After Hours project on how to parse and display JSON data in Objective-C.
 4. Click on your (blue) project, open right panel, click on file inspector, and fill out the class prefix with 3 initials. 
 (I use my initials - CDB) 
 5. Review API results: 
-  * For the World: https://covid19.mathdro.id/api/
-  * For a country: https://covid19.mathdro.id/api/countries/USA
+   * For the World: https://covid19.mathdro.id/api/
+   * For a country: https://covid19.mathdro.id/api/countries/USA
 
 ------
 ## Step 2: Model, Model Controller, and View Controller Files
@@ -22,16 +22,16 @@ CC's After Hours project on how to parse and display JSON data in Objective-C.
 3. In the `CDBCoronaData.m` implementation file:
     * Copy/Paste your methods over from your header file.
     * Write your boiler plate code for init and set your instance variables.
-    ```
-    self = [super init]; // boiler plate code
-    if (self) {
-        // set instance variables
-        _confirmed = confirmed;
-        _deaths = deaths;
-        _recovered = recovered;
-    }
-    return self;
-    ```
+     ```
+     self = [super init]; // boiler plate code
+     if (self) {
+         // set instance variables
+         _confirmed = confirmed;
+         _deaths = deaths;
+         _recovered = recovered;
+     }
+     return self;
+     ```
     * Set self with dictionary values. 
     `self = [self initWithConfirmed:[confirmed intValue] deaths:[deaths intValue] recovered:[recovered intValue]];`
 
